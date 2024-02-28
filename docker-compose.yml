@@ -1,0 +1,44 @@
+version: "3.2"
+services:
+  order-config-server:
+    build: ./order-config-server
+    container_name: 'order-config-server'
+    ports:
+      - "8888:8888"
+    networks:
+      - local
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - local
+
+  order-taking-service:
+    build: ./order-taking-service
+    container_name: 'order-taking-service'
+    ports:
+      - "8080:8080"
+    networks:
+      - local
+    depends_on:
+      - "order-config-server"
+
+  order-approval-service:
+    build: ./order-approval-service
+    container_name: 'order-approval-service'
+    ports:
+      - "8090:8090"
+    networks:
+      - local
+    depends_on:
+      - "order-config-server"
+networks:
+  local:
+    driver: bridge

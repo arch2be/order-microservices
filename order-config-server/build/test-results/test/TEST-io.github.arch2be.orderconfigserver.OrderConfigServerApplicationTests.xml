@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.arch2be.orderconfigserver.OrderConfigServerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-28T17:00:53" hostname="DESKTOP-I21LK59" time="0.663">
+  <properties/>
+  <testcase name="contextLoads()" classname="io.github.arch2be.orderconfigserver.OrderConfigServerApplicationTests" time="0.663"/>
+  <system-out><![CDATA[18:00:51.083 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.github.arch2be.orderconfigserver.OrderConfigServerApplicationTests]: OrderConfigServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:00:51.172 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.github.arch2be.orderconfigserver.OrderConfigServerApplication for test class io.github.arch2be.orderconfigserver.OrderConfigServerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-02-28T18:00:51.648+01:00  INFO 27392 --- [    Test worker] .g.a.o.OrderConfigServerApplicationTests : Starting OrderConfigServerApplicationTests using Java 20.0.2 with PID 27392 (started by Mateusz in C:\Users\Mateusz\Desktop\order-microservices\order-config-server)
+2024-02-28T18:00:51.649+01:00  INFO 27392 --- [    Test worker] .g.a.o.OrderConfigServerApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-02-28T18:00:52.449+01:00  INFO 27392 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=274a0a24-0273-3851-9156-525138d5dbd3
+2024-02-28T18:00:53.102+01:00  INFO 27392 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ad0bb4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7196a8f1, org.springframework.security.web.context.SecurityContextHolderFilter@54a056e4, org.springframework.security.web.header.HeaderWriterFilter@6704df84, org.springframework.web.filter.CorsFilter@6a6da47a, org.springframework.security.web.csrf.CsrfFilter@629b780f, org.springframework.security.web.authentication.logout.LogoutFilter@524f5ea5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b14f482, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3407aa4f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@8f39224, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40c76f5a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12cd129c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a717d79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f642bf, org.springframework.security.web.access.ExceptionTranslationFilter@7fc7152e, org.springframework.security.web.access.intercept.AuthorizationFilter@4d43a1b7]
+2024-02-28T18:00:53.468+01:00  INFO 27392 --- [    Test worker] .g.a.o.OrderConfigServerApplicationTests : Started OrderConfigServerApplicationTests in 2.147 seconds (process running for 3.177)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

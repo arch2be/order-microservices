@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  order-config-server:
+    build: .
+    container_name: 'order-config-server'
+    ports:
+      - "8888:8888"
+    networks:
+      - local
+networks:
+  local:
+    driver: bridge

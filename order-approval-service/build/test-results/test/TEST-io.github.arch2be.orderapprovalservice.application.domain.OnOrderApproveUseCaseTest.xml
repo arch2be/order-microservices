@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.arch2be.orderapprovalservice.application.domain.OnOrderApproveUseCaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-28T22:47:46" hostname="DESKTOP-I21LK59" time="0.034">
+  <properties/>
+  <testcase name="shouldCorrectApproveOrder()" classname="io.github.arch2be.orderapprovalservice.application.domain.OnOrderApproveUseCaseTest" time="0.027"/>
+  <testcase name="shouldThrowDomainException()" classname="io.github.arch2be.orderapprovalservice.application.domain.OnOrderApproveUseCaseTest" time="0.006"/>
+  <system-out><![CDATA[
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

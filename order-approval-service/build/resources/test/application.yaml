@@ -1,0 +1,42 @@
+spring:
+    cloud:
+        config:
+            enabled: false
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: <login user to smtp server>
+        password: <login password to smtp server>
+        properties:
+            mail:
+                debug: true
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+    datasource:
+        url: jdbc:h2:mem:mydb
+        username: sa
+        password: password
+        driverClassName: org.h2.Driver
+    jpa:
+        spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+        generate-ddl: true
+    rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+
+new-orders-queue: test-queue
+publisher:
+    exchange-name: test-exchange
+    routing-key: order
+agent-emails:
+    - example@gmail.com
+    - example1@gmail.com
+    - example2@gmail.com
+onapproveorder:
+    out:
+        rest:
+            url: http://localhost:9999/order
