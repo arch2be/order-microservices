@@ -47,3 +47,9 @@
 
 ## Arch
 - use hexagonal pattern combined with DDD
+
+## Resources
+- Config server: https://github.com/arch2be/order-config-server
+- Order approval: https://github.com/arch2be/order-approval-service
+- Order taking: https://github.com/arch2be/order-taking-service
+- Sample config: https://github.com/arch2be/sample-config-application
