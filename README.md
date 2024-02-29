@@ -35,7 +35,7 @@
 `curl --location --request POST 'http://localhost:8090/api/v1/order/d5f8e5d5-e538-41d0-83cd-be2537a32045/approve' \
 --header 'Authorization: Basic YWdlbnQ6YWdlbnQ='`
 
-3. to check rabbit go to: `http://localhost:15672/` and use default account guest/guest
+3. to check rabbit go to: `http://localhost:15672/` and use default account `guest/guest`
    
 ## Stack
 - Java 17
