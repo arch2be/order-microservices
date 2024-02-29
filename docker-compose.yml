@@ -7,19 +7,21 @@ services:
       - "8888:8888"
     networks:
       - local
+    restart: always
 
-  rabbitmq:
-    image: rabbitmq:3-management-alpine
-    container_name: 'rabbitmq'
-    ports:
-      - 5672:5672
-      - 15672:15672
+  rabbit:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
     volumes:
-      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+        - ./rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+        - ./rabbitmq/definitions.json:/etc/rabbitmq/definitions.json:ro
+    ports:
+        - "5672:5672"
+        - "15672:15672"
     networks:
       - local
-
+    restart: always
+    
   order-taking-service:
     build: ./order-taking-service
     container_name: 'order-taking-service'
@@ -29,6 +31,7 @@ services:
       - local
     depends_on:
       - "order-config-server"
+    restart: always
 
   order-approval-service:
     build: ./order-approval-service
@@ -39,6 +42,7 @@ services:
       - local
     depends_on:
       - "order-config-server"
+    restart: always
 networks:
   local:
     driver: bridge

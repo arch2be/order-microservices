@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.github.arch2be.ordertakingservice.application.domain.model.OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-28T23:03:06" hostname="DESKTOP-I21LK59" time="0.003">
+<testsuite name="io.github.arch2be.ordertakingservice.application.domain.model.OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-29T09:35:47" hostname="DESKTOP-I21LK59" time="0.002">
   <properties/>
-  <testcase name="shouldThrowDomainException()" classname="io.github.arch2be.ordertakingservice.application.domain.model.OrderTest" time="0.003"/>
+  <testcase name="shouldThrowDomainException()" classname="io.github.arch2be.ordertakingservice.application.domain.model.OrderTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

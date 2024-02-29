@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.github.arch2be.ordertakingservice.framework.in.rest.OrderControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-28T23:03:23" hostname="DESKTOP-I21LK59" time="1.102">
+<testsuite name="io.github.arch2be.ordertakingservice.framework.in.rest.OrderControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-29T09:36:04" hostname="DESKTOP-I21LK59" time="1.083">
   <properties/>
-  <testcase name="processCorrectOrderRequestAndPushToQueue()" classname="io.github.arch2be.ordertakingservice.framework.in.rest.OrderControllerTest" time="1.036"/>
-  <testcase name="shouldThrowUnAuthorizeCode()" classname="io.github.arch2be.ordertakingservice.framework.in.rest.OrderControllerTest" time="0.065"/>
-  <system-out><![CDATA[00:03:06.902 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
-00:03:06.908 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-00:03:07.087 [testcontainers-lifecycle-0] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-00:03:07.384 [testcontainers-lifecycle-0] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
-00:03:07.385 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
-00:03:07.401 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  <testcase name="processCorrectOrderRequestAndPushToQueue()" classname="io.github.arch2be.ordertakingservice.framework.in.rest.OrderControllerTest" time="1.019"/>
+  <testcase name="shouldThrowUnAuthorizeCode()" classname="io.github.arch2be.ordertakingservice.framework.in.rest.OrderControllerTest" time="0.062"/>
+  <system-out><![CDATA[10:35:47.571 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+10:35:47.577 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+10:35:47.763 [testcontainers-lifecycle-0] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+10:35:48.068 [testcontainers-lifecycle-0] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+10:35:48.069 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+10:35:48.086 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
   Server Version: 20.10.21
   API Version: 1.41
   Operating System: Docker Desktop
   Total Memory: 15946 MB
-00:03:07.432 [testcontainers-lifecycle-0] INFO tc.testcontainers/ryuk:0.6.0 -- Creating container for image: testcontainers/ryuk:0.6.0
-00:03:07.612 [testcontainers-lifecycle-0] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
-00:03:07.767 [testcontainers-lifecycle-0] INFO tc.testcontainers/ryuk:0.6.0 -- Container testcontainers/ryuk:0.6.0 is starting: a286883095fa1b40cbd00b607b72dfc1331e05f57a018957a0d6d05759c14267
-00:03:08.234 [testcontainers-lifecycle-0] INFO tc.testcontainers/ryuk:0.6.0 -- Container testcontainers/ryuk:0.6.0 started in PT0.8024512S
-00:03:08.239 [testcontainers-lifecycle-0] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-00:03:08.239 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- Checking the system...
-00:03:08.239 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
-00:03:08.240 [testcontainers-lifecycle-0] INFO tc.rabbitmq:3.8-management-alpine -- Creating container for image: rabbitmq:3.8-management-alpine
-00:03:08.321 [testcontainers-lifecycle-0] INFO tc.rabbitmq:3.8-management-alpine -- Container rabbitmq:3.8-management-alpine is starting: 114014bba96f5ac3eddce6e8dbab02dc1034b6b416871d027da552b1f527c8a3
-00:03:20.303 [testcontainers-lifecycle-0] INFO tc.rabbitmq:3.8-management-alpine -- Container rabbitmq:3.8-management-alpine started in PT12.0635264S
+10:35:48.117 [testcontainers-lifecycle-0] INFO tc.testcontainers/ryuk:0.6.0 -- Creating container for image: testcontainers/ryuk:0.6.0
+10:35:48.300 [testcontainers-lifecycle-0] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+10:35:48.462 [testcontainers-lifecycle-0] INFO tc.testcontainers/ryuk:0.6.0 -- Container testcontainers/ryuk:0.6.0 is starting: 432d01ebc00b5b16af0666bbf1328890ab0f608439d8b1ba74b72562d80abec1
+10:35:48.996 [testcontainers-lifecycle-0] INFO tc.testcontainers/ryuk:0.6.0 -- Container testcontainers/ryuk:0.6.0 started in PT0.8796584S
+10:35:49.003 [testcontainers-lifecycle-0] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+10:35:49.003 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+10:35:49.004 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+10:35:49.004 [testcontainers-lifecycle-0] INFO tc.rabbitmq:3.8-management-alpine -- Creating container for image: rabbitmq:3.8-management-alpine
+10:35:49.100 [testcontainers-lifecycle-0] INFO tc.rabbitmq:3.8-management-alpine -- Container rabbitmq:3.8-management-alpine is starting: 445ca357390be232230b7bb6167f17b125159257164b178e7e3125a097c10527
+10:36:01.378 [testcontainers-lifecycle-0] INFO tc.rabbitmq:3.8-management-alpine -- Container rabbitmq:3.8-management-alpine started in PT12.3733019S
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -32,17 +32,17 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.3)
 
-2024-02-29T00:03:21.074+01:00  INFO 848 --- [    Test worker] i.g.a.o.f.in.rest.OrderControllerTest    : Starting OrderControllerTest using Java 20.0.2 with PID 848 (started by Mateusz in C:\Users\Mateusz\Desktop\order-microservices\order-taking-service)
-2024-02-29T00:03:21.075+01:00  INFO 848 --- [    Test worker] i.g.a.o.f.in.rest.OrderControllerTest    : No active profile set, falling back to 1 default profile: "default"
-2024-02-29T00:03:21.821+01:00  INFO 848 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1c13ac3-cf17-319a-8d09-48e614ddf4e2
-2024-02-29T00:03:22.621+01:00  INFO 848 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d969452, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d4df0f4, org.springframework.security.web.context.SecurityContextHolderFilter@510da778, org.springframework.security.web.header.HeaderWriterFilter@52c46334, org.springframework.security.web.authentication.logout.LogoutFilter@2a1e57c6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1682e6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54567b05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a5e2525, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74f4a2ba, org.springframework.security.web.access.ExceptionTranslationFilter@7c5f29c6, org.springframework.security.web.access.intercept.AuthorizationFilter@6d421fe]
-2024-02-29T00:03:22.945+01:00  INFO 848 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-02-29T00:03:22.945+01:00  INFO 848 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-02-29T00:03:22.946+01:00  INFO 848 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2024-02-29T00:03:23.035+01:00  INFO 848 --- [    Test worker] i.g.a.o.f.in.rest.OrderControllerTest    : Started OrderControllerTest in 2.686 seconds (process running for 17.177)
-2024-02-29T00:03:23.957+01:00  INFO 848 --- [    Test worker] i.g.a.o.f.o.r.RabbitMQOrderPublisher     : New order ready for publish with id: 166bd4cb-2188-4a52-bd03-9940f9ff68d6
-2024-02-29T00:03:23.977+01:00  INFO 848 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:56367]
-2024-02-29T00:03:24.032+01:00  INFO 848 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1118d539:0/SimpleConnection@eddc9bb [delegate=amqp://guest@127.0.0.1:56367/, localPort=56375]
+2024-02-29T10:36:02.177+01:00  INFO 11268 --- [    Test worker] i.g.a.o.f.in.rest.OrderControllerTest    : Starting OrderControllerTest using Java 20.0.2 with PID 11268 (started by Mateusz in C:\Users\Mateusz\Desktop\order-microservices\order-taking-service)
+2024-02-29T10:36:02.178+01:00  INFO 11268 --- [    Test worker] i.g.a.o.f.in.rest.OrderControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-02-29T10:36:02.943+01:00  INFO 11268 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1c13ac3-cf17-319a-8d09-48e614ddf4e2
+2024-02-29T10:36:03.723+01:00  INFO 11268 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c7ed72a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22b7ef2b, org.springframework.security.web.context.SecurityContextHolderFilter@568f4faa, org.springframework.security.web.header.HeaderWriterFilter@305552d6, org.springframework.security.web.authentication.logout.LogoutFilter@1247c72e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c96403e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@589dfa6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43588265, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d421fe, org.springframework.security.web.access.ExceptionTranslationFilter@57e4b86c, org.springframework.security.web.access.intercept.AuthorizationFilter@42aa1324]
+2024-02-29T10:36:04.043+01:00  INFO 11268 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-02-29T10:36:04.043+01:00  INFO 11268 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-29T10:36:04.044+01:00  INFO 11268 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-29T10:36:04.129+01:00  INFO 11268 --- [    Test worker] i.g.a.o.f.in.rest.OrderControllerTest    : Started OrderControllerTest in 2.707 seconds (process running for 17.691)
+2024-02-29T10:36:05.042+01:00  INFO 11268 --- [    Test worker] i.g.a.o.f.o.r.RabbitMQOrderPublisher     : New order ready for publish with id: 6c12a0ad-1fb7-4a5e-acd2-8718d62488d0
+2024-02-29T10:36:05.061+01:00  INFO 11268 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:53449]
+2024-02-29T10:36:05.113+01:00  INFO 11268 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1e6060f1:0/SimpleConnection@17034458 [delegate=amqp://guest@127.0.0.1:53449/, localPort=53454]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
