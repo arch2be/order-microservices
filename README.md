@@ -30,11 +30,13 @@
     ]
 }'`
 
-3. to approve order you need to take uuid from previous response and curl:
+2. to approve order you need to take uuid from previous response and curl:
    
 `curl --location --request POST 'http://localhost:8090/api/v1/order/d5f8e5d5-e538-41d0-83cd-be2537a32045/approve' \
 --header 'Authorization: Basic YWdlbnQ6YWdlbnQ='`
 
+3. to check rabbit go to: `http://localhost:15672/` and use default account guest/guest
+   
 ## Stack
 - Java 17
 - Spring(Boot, JPA, Cloud Config, Security)
